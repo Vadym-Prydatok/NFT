@@ -1,0 +1,46 @@
+.nft {
+  .progress {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    &__eth {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: 30%;
+      top: 0;
+      z-index: -1;
+    }
+
+    &__btc {
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      left: 30%;
+      bottom: -25%;
+      z-index: -1;
+    }
+
+    &-item {
+      flex-basis: 35%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      &__title {
+        color: $light-pink-purple;
+        font-weight: 700;
+        font-size: 3.5rem;
+      }
+
+      &__description {
+        margin-top: 25px;
+        color: $grey-color;
+      }
+    }
+  }
+}

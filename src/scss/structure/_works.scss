@@ -1,0 +1,76 @@
+.nft {
+  .works {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .cards {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 50px;
+
+      &-item {
+        padding: 15px;
+        border-radius: 25px;
+        box-shadow: $cards-shadow;
+        background-color: $white-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: all .5s ease;
+
+        &:hover {
+          transition: all .5s ease;
+          -webkit-box-shadow: 5px 5px 15px 5px #000000;
+          box-shadow: 5px 5px 15px 5px #000000;
+        }
+
+        &:nth-child(n + 5) {
+          margin-top: 25px;
+        }
+
+        &:nth-child(odd) {
+          margin-top: 50px;
+        }
+
+        &:nth-child(3),
+        &:first-child {
+          margin-top: 25px;
+        }
+
+        &__image {
+          width: 244px;
+          height: 325px;
+
+          img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+          }
+        }
+
+        &__tag {
+          color: $dark-color;
+          font-size: 1.2rem;
+          font-weight: 700;
+          margin-top: 15px;
+        }
+
+        &__artist {
+          color: $grey-color;
+          margin-top: 10px;
+          font-size: 0.7rem;
+        }
+      }
+    }
+
+    &__button {
+      margin-top: 50px;
+    }
+  }
+}
